@@ -20,10 +20,10 @@ namespace AZEFunctions
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            fileStorage.WriteLine($"Hello from {input.Name} za slick updated 1 2 3");
+            fileStorage.WriteLine($"Hello from {input.Name} za slick updated 1 2 3 4");
 
             return input.Name != null
-                ? (ActionResult)new OkObjectResult($"Hello, {input.Name} updated 1 2 3")
+                ? (ActionResult)new OkObjectResult($"Hello, {input.Name} updated 1 2 3 4")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
 
